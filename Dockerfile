@@ -5,9 +5,7 @@ FROM ubuntu:latest
 RUN apt-get update \
     && apt-get install -y \
         git \
-        sudo \
-        fortune-mod \
-        cowsay \
+        fortune-mod cowsay -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Clone the GitHub repository
